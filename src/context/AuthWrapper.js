@@ -26,7 +26,7 @@ export const AuthWrapper = () => {
                 toast.success(`Welcome Back ${userName}`);
                 resolve("success");
             } else {
-                reject("Incorrect password");
+                reject("Password must be - 'password' to login");
             }
         });
     };
