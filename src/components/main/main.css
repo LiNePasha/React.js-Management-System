@@ -1,0 +1,193 @@
+.main {
+    padding: 20px 30px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    .main {
+        padding: 20px;
+    }
+}
+
+  /* Task */
+  
+  .task {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100%;
+  }
+  
+  .task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .description {
+    flex-grow: 1;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-table;
+  }
+  
+  .not.started { background-color: gray; }
+  .in.progress { background-color: #28a745; }
+  .finished { background-color: var(--primaryColor) }
+  
+  .task-actions {
+    margin-top: 5px;
+  }
+  
+  .edit-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-task input,
+  .edit-task select {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .edit-task button {
+    flex-shrink: 0;
+  }
+
+/* Controls */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.select-container {
+  position: relative;
+}
+
+.select-container label {
+  margin-right: 10px;
+  font-size: large;
+  color: #fff;
+}
+
+.custom-select {
+  position: relative;
+  width: 160px;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 8px 25px 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.custom-select .select-arrow {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #555;
+}
+
+.custom-select select:focus + .select-arrow {
+  border-top-color: #007bff;
+}
+
+.custom-select select option {
+  background-color: #fff;
+}
+
+.custom-select select option:hover {
+  background-color: #f0f0f0;
+}
+
+/* pagination */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* task form */
+
+.task-form {
+  gap: 10px;
+  color: #fff;
+}
+
+.task-input,
+.task-select,
+.input input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.task-input,
+.task-select,
+.task-button{
+  margin-bottom: 10px;
+}
+
+.task-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-button:hover {
+  background-color: #0056b3;
+}
+
+/* no found */
+.no-found {
+    padding: 10px;
+    border: 1px solid red;
+    margin-top: 10px;
+    display: inline-block;
+    color: red;
+}

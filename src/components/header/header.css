@@ -1,0 +1,42 @@
+/* header */
+
+.header {
+    transition: all 0.5s;
+    z-index: 997;
+    height: 90px;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    background-color: var(--primaryColor);
+    padding-left: 35px;
+}
+
+/* toggle sidebar */
+.header .toggle-sidebar-btn {
+    font-size: 32px;
+    margin-right: 2rem;
+    cursor: pointer;
+    color: #fff;
+    width: 4rem;
+}
+
+
+/* logo */
+
+.logo{
+    line-height: 1;
+}
+
+@media (min-width: 1200px){
+    .logo{
+        width: 280px;
+    }
+}
+
+.logo img {
+    margin-right: 6px;
+}
+
+.logo h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
